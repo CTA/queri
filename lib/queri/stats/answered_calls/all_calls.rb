@@ -15,7 +15,7 @@ module Queri
 
           def key_translations
             Hash[
-              :calls_answered, "N. calls answered by operators",
+              :calls_answered, "N. calls answered by operators:",
               :average_call_length, "Average call length:",
               :minimum_call_length, "Min call length:",
               :maximum_call_length, "Max call length:",
