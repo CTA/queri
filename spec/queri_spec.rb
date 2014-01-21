@@ -190,7 +190,7 @@ describe Queri do
     context "without configurations" do
       before do
         @saved_configs = Queri.config.dup
-        Queri.instance_variable_set(:@config, {})
+        Queri.class_variable_set(:@@server, nil)
       end
 
       after do

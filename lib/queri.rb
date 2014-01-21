@@ -56,7 +56,7 @@ module Queri
   end
 
   def self.send_request *args
-    raise LoadError, "client configs not set. Assign by passing a hash to Queri.configure or a yaml file path to Queri.configure_with" if (@config.nil? || @config.empty?)
+    raise LoadError, "client configs not set. Assign by passing a hash to Queri.configure or a yaml file path to Queri.configure_with" if @@server.nil?
     request = Request.new(*args)
     response = @@server.call(*request.parameters)
     return response[request.report.class.xml_code]

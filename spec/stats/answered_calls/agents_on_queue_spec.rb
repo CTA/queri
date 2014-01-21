@@ -4,6 +4,8 @@ describe Queri::Stats::AnsweredCalls::AgentsOnQueue do
   let(:report_class) { Queri::Stats::AnsweredCalls::AgentsOnQueue }
   let(:xml_code) { report_class.xml_code }
 
+  before { Queri.configure_with(File.join(File.dirname(__FILE__), '..', '..', 'config.yml')) }
+
   it_behaves_like "a report class"
 
   it_behaves_like "a report method"

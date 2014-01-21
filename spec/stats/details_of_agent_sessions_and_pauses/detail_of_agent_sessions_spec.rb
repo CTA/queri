@@ -1,8 +1,10 @@
 require 'spec_helper'
 
-describe Queri::Stats::DetailsOfAgentSessionsAndPauses::DetailOfAgentSessions, :focus do
+describe Queri::Stats::DetailsOfAgentSessionsAndPauses::DetailOfAgentSessions do
   let(:report_class) { Queri::Stats::DetailsOfAgentSessionsAndPauses::DetailOfAgentSessions }
   let(:xml_code) { report_class.xml_code }
+
+  before { Queri.configure_with(File.join(File.dirname(__FILE__), '..', '..', 'config.yml')) }
 
   it_behaves_like "a report class"
 
