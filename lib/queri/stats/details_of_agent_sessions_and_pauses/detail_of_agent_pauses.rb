@@ -1,12 +1,12 @@
 module Queri
   class Stats
     class DetailsOfAgentSessionsAndPauses
-      class DetailOfAgentSessions
+      class DetailOfAgentPauses
         attr_reader :response
 
         class << self
           def xml_code
-            DetailsOfAgentSessionsAndPauses.xml_code + ".AgentSessions"
+            DetailsOfAgentSessionsAndPauses.xml_code + ".AgentPauses"
           end
 
           def query_method
@@ -16,14 +16,14 @@ module Queri
           def key_translations
             Hash[
               :agent, "Agent",
-              :clock_in, "Start hour", 
-              :clock_out, "End hour", 
-              :session_duration, "Duration", 
-              :call_back_extension, "Ext.", 
-              :termination, "Termination", 
-              :number_of_pauses, "Pause", 
-              :total_pause_time, "P.Time", 
-              :server, "Srv"
+              :extension, "Ext.",
+              :pause_code, "Code",
+              :pause_activity, "Activity",
+              :pause_billable_code, "&nbsp;",
+              :pause_billable, "Billable?",
+              :pause_start, "Start hour",
+              :pause_end, "End hour",
+              :pause_duration, "Duration"
             ]
           end
 
