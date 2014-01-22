@@ -15,6 +15,6 @@ describe Queri::Stats::DetailsOfAgentSessionsAndPauses::DetailOfAgentSessions do
   it_behaves_like "a stats report"
 
   describe "An instance of", Queri::Stats::DetailsOfAgentSessionsAndPauses::DetailOfAgentSessions do
-    it_behaves_like "a composite agent-level report"
+    it_behaves_like "a composite agent-level report instance"
   end
 end
