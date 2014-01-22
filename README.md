@@ -52,6 +52,9 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
     * AnsweredCalls
       * AgentsOnQueue
       * AllCalls
+    * DetailsOfAgentSessionsAndPauses
+      * DetailOfAgentSessions
+      * DetailOfAgentPauses
     * UnansweredCalls
       * AllCalls
   * Realtime
@@ -70,6 +73,7 @@ Any subclass of Queri::Realtime will accept timestamps for period, but they will
 
 Returned values vary between agent-level and aggregate reports.
 Agent-level reports return an Array of Hashes, each Hash corresponding to an agent's metrics for the requested analysis.
+Composite agent-level reports return a Hash associating agent usernames with an Array of Hashes (each record for the requested analysis).
 Aggregate reports return a single Hash; the composite metrics for the requested analysis.
   * Agent-level reports
     * Stats
@@ -80,6 +84,11 @@ Aggregate reports return a single Hash; the composite metrics for the requested 
     * Realtime
       * Agents
       * Queues
+  * Composite agent-level reports
+    * Stats
+      * DetailsOfAgentSessionsAndPauses
+        * DetailOfAgentSessions
+        * DetailOfAgentPauses
   * Aggregate reports
     * Stats
       * AnsweredCalls
