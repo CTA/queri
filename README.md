@@ -52,6 +52,9 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
     * AnsweredCalls
       * AgentsOnQueue
       * AllCalls
+      * CallsFullyWithinGivenTimeInterval
+      * DisconnectionCauses
+      * ServiceLevelAgreement
     * DetailsOfAgentSessionsAndPauses
       * DetailOfAgentSessions
       * DetailOfAgentPauses
@@ -75,6 +78,7 @@ Returned values vary between agent-level and aggregate reports.
 Agent-level reports return an Array of Hashes, each Hash corresponding to an agent's metrics for the requested analysis.
 Composite agent-level reports return a Hash associating agent usernames with an Array of Hashes (each record for the requested analysis).
 Aggregate reports return a single Hash; the composite metrics for the requested analysis.
+Composite aggregate reports return an Array of Hashes, each Hash corresponding to various criteria for the composite metrics of the request analysis.
   * Agent-level reports
     * Stats
       * AgentsAndSessions
@@ -93,8 +97,14 @@ Aggregate reports return a single Hash; the composite metrics for the requested 
     * Stats
       * AnsweredCalls
         * AllCalls
+        * CallsFullyWithinGivenTimeInterval
       * UnansweredCalls
         * AllCalls
+  * Composite aggregate reports
+    * Stats
+      * AnsweredCalls
+        * DisconnectionCauses
+        * ServiceLevelAgreement
 
 ## Contributing
 
