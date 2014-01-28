@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe Queri::Stats::AnsweredCalls::AnsweredCallsByQueue do
-  let(:report_class) { Queri::Stats::AnsweredCalls::AnsweredCallsByQueue }
+describe Queri::Stats::AnsweredCalls::AnsweredCallsByDirection do
+  let(:report_class) { Queri::Stats::AnsweredCalls::AnsweredCallsByDirection }
   let(:xml_code) { report_class.xml_code }
 
   before do
@@ -16,7 +16,7 @@ describe Queri::Stats::AnsweredCalls::AnsweredCallsByQueue do
 
   it_behaves_like "a stats report"
 
-  describe "An instance of", Queri::Stats::AnsweredCalls::AnsweredCallsByQueue do
+  describe "An instance of", Queri::Stats::AnsweredCalls::AnsweredCallsByDirection do
     it_behaves_like "a composite aggregate report instance"
   end
 end
