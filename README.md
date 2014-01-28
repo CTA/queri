@@ -57,6 +57,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * AnsweredCallsByStints
       * CallsFullyWithinGivenTimeInterval
       * DisconnectionCauses
+      * IvrSelection
       * QueuePosition
       * ServiceLevelAgreement
       * Transfers
@@ -112,6 +113,7 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
         * AnsweredCallsByQueue
         * AnsweredCallsByStints
         * DisconnectionCauses
+        * IvrSelection
         * QueuePosition
         * ServiceLevelAgreement
         * Transfers
