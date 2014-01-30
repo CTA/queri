@@ -26,7 +26,7 @@ Configurations for connecting to a Queuemetrics XMLRPC client are needed to send
 
 You can set these configurations with the following:
 
-    Queri::configure({username: "new\_user", password: "new\_password"})
+    Queri::configure({username: "new_user", password: "new_password"})
 
 or with a local YAML file:
 
@@ -38,7 +38,7 @@ or with a local YAML file:
     period_start = Time.now - 3600
     period_end = Time.now
     Queri::Stats::AgentsAndSessions::AgentAvailability.new( queues, period_start, period_end )
-    #=> report\_object
+    #=> report_object
 
 These report objects respond to the method #response, which returns either an Array or a Hash, depending on whether the report is an agent-level or aggregate analysis.
 Keys for this response can be found by calling ::keys on the object class. ::key\_translations for the object class returns a hash associating these keys with the raw data keys returned from the XMLRPC client.
