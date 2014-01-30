@@ -59,6 +59,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * DisconnectionCauses
       * DnisUsed
       * IvrSelection
+      * MusicOnHoldByAgent
       * QueuePosition
       * ServiceLevelAgreement
       * Transfers
@@ -97,6 +98,8 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
       * Queues
   * Composite agent-level reports
     * Stats
+      * AnsweredCalls
+        * MusicOnHoldByAgent
       * DetailsOfAgentSessionsAndPauses
         * DetailOfAgentSessions
         * DetailOfAgentPauses
