@@ -76,6 +76,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * EnterQueuePosition
       * EnterQueuePositionForAllCalls
       * InclusiveServiceLevelAgreement
+      * IvrSelection
       * UnansweredCallsByKeyPress
       * UnansweredCallsByQueue
       * UnansweredCallsByStints
@@ -146,6 +147,7 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
         * EnterQueuePosition
         * EnterQueuePositionForAllCalls
         * InclusiveServiceLevelAgreement
+        * IvrSelection
         * UnansweredCallsByQueue
         * UnansweredCallsByStints
         * UnansweredCallsDistributionByLength
