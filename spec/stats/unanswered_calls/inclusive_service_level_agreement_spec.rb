@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Queri::Stats::UnansweredCalls::InclusiveServiceLevelAgreement, :focus do
+describe Queri::Stats::UnansweredCalls::InclusiveServiceLevelAgreement do
   let(:report_class) { Queri::Stats::UnansweredCalls::InclusiveServiceLevelAgreement }
   let(:xml_code) { report_class.xml_code }
 
