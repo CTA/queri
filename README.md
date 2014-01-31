@@ -73,6 +73,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * CallsFullyWithinTheGivenTimeInterval
       * DisconnectionCauses
       * UnansweredCallsByQueue
+      * UnansweredCallsDistributionByLength
       * UnansweredOutboundCallsByAgent
   * Realtime
     * Agents
@@ -135,6 +136,7 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
       * UnansweredCalls
         * DisconnectionCauses
         * UnansweredCallsByQueue
+        * UnansweredCallsDistributionByLength
 
 ## Contributing
 
