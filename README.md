@@ -95,6 +95,7 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
         * AgentAvailability
       * AnsweredCalls
         * AgentsOnQueue
+        * MusicOnHoldByAgent
       * DetailsOfAnsweredCalls
         * QueueDetails
     * Realtime
@@ -102,8 +103,6 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
       * Queues
   * Composite agent-level reports
     * Stats
-      * AnsweredCalls
-        * MusicOnHoldByAgent
       * DetailsOfAgentSessionsAndPauses
         * DetailOfAgentSessions
         * DetailOfAgentPauses
