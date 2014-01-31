@@ -12,9 +12,9 @@ describe Queri::Stats::DetailsOfAnsweredCalls::PrintableIvrCallDetails do
 
   it_behaves_like "a queuemetrics report"
 
-  it_behaves_like "a stats report"
+#  it_behaves_like "a stats report"
 
   describe "An instance of", Queri::Stats::DetailsOfAnsweredCalls::PrintableIvrCallDetails do
-    it_behaves_like "an agent-level report instance"
+#    it_behaves_like "an agent-level report instance"
   end
 end
