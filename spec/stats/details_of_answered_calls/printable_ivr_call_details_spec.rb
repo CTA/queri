@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe Queri::Stats::AnsweredCalls::AllCalls do
-  let(:report_class) { Queri::Stats::AnsweredCalls::AllCalls }
+describe Queri::Stats::DetailsOfAnsweredCalls::PrintableIvrCallDetails do
+  let(:report_class) { Queri::Stats::DetailsOfAnsweredCalls::PrintableIvrCallDetails }
   let(:xml_code) { report_class.xml_code }
 
   before { Queri.configure_with(File.join(File.dirname(__FILE__), '..', '..', 'config.yml')) }
@@ -14,7 +14,7 @@ describe Queri::Stats::AnsweredCalls::AllCalls do
 
   it_behaves_like "a stats report"
 
-  describe "An instance of", Queri::Stats::AnsweredCalls::AllCalls do
-    it_behaves_like "an aggregate report instance"
+  describe "An instance of", Queri::Stats::DetailsOfAnsweredCalls::PrintableIvrCallDetails do
+    it_behaves_like "an agent-level report instance"
   end
 end
