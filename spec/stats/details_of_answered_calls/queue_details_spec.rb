@@ -1,4 +1,4 @@
-require File.join( File.dirname(__FILE__), '..', '..', 'spec_helper' )
+require 'spec_helper'
 
 describe Queri::Stats::DetailsOfAnsweredCalls::QueueDetails do
   let(:report_class) { Queri::Stats::DetailsOfAnsweredCalls::QueueDetails }
