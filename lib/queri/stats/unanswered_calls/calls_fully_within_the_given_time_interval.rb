@@ -1,12 +1,12 @@
 module Queri
   class Stats
-    class AnsweredCalls
+    class UnansweredCalls
       class CallsFullyWithinTheGivenTimeInterval
         attr_reader :response
 
         class << self
           def xml_code
-            AnsweredCalls.xml_code + ".RiassFullyWithin"
+            UnansweredCalls.xml_code + ".ReportKoFully"
           end
 
           def query_method
@@ -16,19 +16,18 @@ module Queri
           def key_translations
             Hash[
               :calls_fully_within_the_given_time_interval, "Calls fully within the given time interval:",
-              :calls_answered, "N. calls answered by operators:",
-              :average_call_length, "Average call length:",
-              :minimum_call_length, "Min call length:",
-              :maximum_call_length, "Max call length:",
-              :total_call_length, "Total call length:",
-              :average_call_waiting_time, "Average call waiting time:",
-              :minimum_call_waiting_time, "Min waiting time:",
-              :maximum_call_waiting_time, "Max waiting time:",
-              :total_call_waiting_time, "Total waiting time:",
+              :calls_unanswered, "N.of unanswered calls:",
+              :average_call_waiting_time, "Average wait time before disconnection:",
+              :minimum_call_waiting_time, "Min wait time before disconnection:",
+              :maximum_call_waiting_time, "Max wait time before disconnection:",
+              :total_call_waiting_time, "Total wait time before disconnection:",
               :average_initial_queue_position, "Average initial position",
               :minimum_initial_queue_position, "Min initial position",
               :maximum_initial_queue_position, "Max initial position",
-              :queue_position_coverage, "Coverage"
+              :queue_position_coverage, "Coverage",
+              :average_final_queue_position, "Average queue position at disconnection:",
+              :minimum_final_queue_position, "Min queue position at disconnection:",
+              :maximum_final_queue_position, "Max queue position at disconnection:"
             ]
           end
 
