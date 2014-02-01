@@ -64,6 +64,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * ServiceLevelAgreement
       * Transfers
     * AreaCodeAnalysis
+      * AreaCodeReport
     * DetailsOfAgentSessionsAndPauses
       * DetailOfAgentSessions
       * DetailOfAgentPauses
@@ -136,6 +137,8 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
       * AnsweredCalls
         * AllCalls
         * CallsFullyWithinTheGivenTimeInterval
+      * AreaCodeAnalysis
+        * AreaCodeReport
       * UnansweredCalls
         * AllCalls
         * CallsFullyWithinTheGivenTimeInterval
