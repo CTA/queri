@@ -71,6 +71,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
     * DetailsOfUnansweredCalls
       * DetailOfUnansweredCalls
     * Distributions
+      * AcdAttemptsByQueue
       * InboundAcdCallAttempts
     * UnansweredCalls
       * AllCalls
@@ -154,6 +155,8 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
         * QueuePosition
         * ServiceLevelAgreement
         * Transfers
+      * Distributions
+        * AcdAttemptsByQueue
       * UnansweredCalls
         * AllCallsByStints
         * CallOverview
