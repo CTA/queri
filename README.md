@@ -68,6 +68,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * DetailOfAgentPauses
     * DetailsOfAnsweredCalls
       * QueueDetails
+    * DetailsOfUnansweredCalls
     * UnansweredCalls
       * AllCalls
       * AllCallsByStints
