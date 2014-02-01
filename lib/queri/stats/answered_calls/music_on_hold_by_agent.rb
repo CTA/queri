@@ -10,7 +10,7 @@ module Queri
           end
 
           def key_translations
-            Hash[
+            ActiveSupport::OrderedHash[
               :agent, "Agent",
               :total_hold_events, "Total Events",
               :hold_events_per_call, "Events per Call",
