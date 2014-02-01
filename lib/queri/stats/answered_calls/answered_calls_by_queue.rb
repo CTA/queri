@@ -10,7 +10,7 @@ module Queri
           end
 
           def key_translations
-            Hash[
+            ActiveSupport::OrderedHash[
               :empty_column, "&nbsp;",
               :queue, "Queue",
               :number_of_calls, "N. Calls",

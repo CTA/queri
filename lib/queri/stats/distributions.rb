@@ -1,7 +1,7 @@
 module Queri
   class Stats
     class Distributions
-      @@xml_code = "DistroDO"
+      @@xml_code = "DistrDO"
 
       def self.xml_code
         @@xml_code

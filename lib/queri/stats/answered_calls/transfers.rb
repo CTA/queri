@@ -10,7 +10,7 @@ module Queri
           end
 
           def key_translations
-            Hash[
+            ActiveSupport::OrderedHash[
               :extension_transffered_to, "Transfer to",
               :number_of_calls, "N. Calls",
               :percentage_of_calls, "&nbsp;",

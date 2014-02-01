@@ -10,7 +10,7 @@ module Queri
           end
 
           def key_translations
-            Hash[
+            ActiveSupport::OrderedHash[
               :disconnection_cause, "Cause",
               :number_of_calls, "N. Calls",
               :percentage_of_calls, "&nbsp;",

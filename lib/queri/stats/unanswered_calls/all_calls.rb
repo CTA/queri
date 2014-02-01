@@ -14,7 +14,7 @@ module Queri
           end
 
           def key_translations
-            Hash[
+            ActiveSupport::OrderedHash[
               :calls_unanswered, "N.of unanswered calls:",
               :average_wait_before_disconnect, "Average wait time before disconnection:",
               :minimum_wait_before_disconnect, "Min wait time before disconnection:",

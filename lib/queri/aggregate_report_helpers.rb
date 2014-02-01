@@ -3,13 +3,11 @@ module AggregateReportHelpers
 
     def parse_response
       r = Queri.send_request(@queues, self, @period_start, @period_end)
-      xml_keys_to_human_readable_keys = self.class.key_translations.invert
-      r.each_with_index do |metric,i|
-        if i > 0
-          metric[0] = xml_keys_to_human_readable_keys[ metric[0] ]
-        end
-      end
+      pairs = self.class.key_translations.each_pair
       r.shift
-      Hash[*r.flatten]
+      new_metrics = r.map do |metric|
+        [pairs.next[0], metric[1]]
+      end
+      Hash[*new_metrics.flatten]
     end
 end
