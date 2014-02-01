@@ -63,6 +63,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * QueuePosition
       * ServiceLevelAgreement
       * Transfers
+    * AreaCodeAnalysis
     * DetailsOfAgentSessionsAndPauses
       * DetailOfAgentSessions
       * DetailOfAgentPauses
