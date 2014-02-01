@@ -70,6 +70,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * QueueDetails
     * DetailsOfUnansweredCalls
       * DetailOfUnansweredCalls
+    * Distributions
     * UnansweredCalls
       * AllCalls
       * AllCallsByStints
