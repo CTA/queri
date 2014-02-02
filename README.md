@@ -67,6 +67,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * AnsweredCallDistributionPerDay
       * AnsweredCallWaitTimePerDay
       * SalesPerDay
+      * ScheduleAdherencePerDay
       * UnansweredCallWaitTimePerDay
     * DetailsOfAgentSessionsAndPauses
       * DetailOfAgentSessions
@@ -165,6 +166,7 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
         * AnsweredCallDistributionPerDay
         * AnsweredCallWaitTimePerDay
         * SalesPerDay
+        * ScheduleAdherencePerDay
         * UnansweredCallWaitTimePerDay
       * Distributions
         * AcdAttemptsByQueue
