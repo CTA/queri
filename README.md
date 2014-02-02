@@ -65,6 +65,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * Transfers
     * CallDistributionByDay
       * AnsweredCallDistributionPerDay
+      * AnsweredCallWaitTimePerDay
     * DetailsOfAgentSessionsAndPauses
       * DetailOfAgentSessions
       * DetailOfAgentPauses
@@ -160,6 +161,7 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
         * Transfers
       * CallDistributionByDay
         * AnsweredCallDistributionPerDay
+        * AnsweredCallWaitTimePerDay
       * Distributions
         * AcdAttemptsByQueue
         * AcdAttemptsByTerminal
