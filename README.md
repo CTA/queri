@@ -72,6 +72,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * ScheduleAdherencePerDay
       * TrafficAnalysisByPeriodPerDay
       * UnansweredCallWaitTimePerDay
+    * CallDistributionByHour
     * DetailsOfAgentSessionsAndPauses
       * DetailOfAgentSessions
       * DetailOfAgentPauses
