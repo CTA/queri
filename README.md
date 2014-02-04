@@ -49,6 +49,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
   * Stats
     * AgentsAndSessions
       * AgentAvailability
+      * AgentOccupancyReport
       * AgentPerformanceByAcdGroup
       * AgentSessionDetail
       * AnsweredCallsByCustomGroup
@@ -150,6 +151,7 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
     * Stats
       * AgentsAndSessions
         * AgentAvailability
+        * AgentOccupancyReport
         * AgentPerformanceByAcdGroup
         * AnsweredCallsByCustomGroup
         * AnsweredCallsByLocation
