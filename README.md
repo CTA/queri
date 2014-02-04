@@ -74,6 +74,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * UnansweredCallWaitTimePerDay
     * CallDistributionByDayOfWeek
       * AnsweredCallDistributionPerDayOfWeek
+      * AnsweredCallWaitTimePerDayOfWeek
     * CallDistributionByHour
       * AnsweredCallDistributionPerHour
       * AnsweredCallWaitTimePerHour
@@ -187,6 +188,7 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
         * UnansweredCallWaitTimePerDay
       * CallDistributionByDayOfWeek
         * AnsweredCallDistributionPerDayOfWeek
+        * AnsweredCallWaitTimePerDayOfWeek
       * CallDistributionByHour
         * AnsweredCallDistributionPerHour
         * AnsweredCallWaitTimePerHour
