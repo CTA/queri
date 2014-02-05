@@ -1,18 +1,18 @@
 module Queri
   class Stats
     class AgentsAndSessions
-      class AgentSessionTimeByHour < Queri::Stats
+      class AgentPayableTimeByHour < Queri::Stats
         include CompositeByHourReportHelpers
 
         class << self
           def xml_code
-            AgentsAndSessions.xml_code + ".AgentBillableTimeByHour"
+            AgentsAndSessions.xml_code + ".AgentPayableTimeByHour"
           end
 
           def key_translations
             ActiveSupport::OrderedHash[
               :agent, "Agent",
-              :total_session_duration, "Total"
+              :total_payable_session_time, "Total"
             ]
           end
         end
