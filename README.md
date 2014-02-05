@@ -118,6 +118,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * AcdAttemptsByQueue
       * AcdAttemptsByTerminal
       * InboundAcdCallAttempts
+    * IvrTracking
     * UnansweredCalls
       * AllCalls
       * AllCallsByStints
