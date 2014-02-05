@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Queri::Stats::CallOutcomes::CallResultsByOutcomes, :focus do
+describe Queri::Stats::CallOutcomes::CallResultsByOutcomes do
   let(:report_class) { Queri::Stats::CallOutcomes::CallResultsByOutcomes }
   let(:xml_code) { report_class.xml_code }
 
