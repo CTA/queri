@@ -237,6 +237,8 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
         * ScheduleAdherencePerHour
         * TrafficAnalysisByPeriodPerHour
         * UnansweredCallWaitTimePerHour
+      * CallOutcomes
+        * CallResultsByOutcomes
       * Distributions
         * AcdAttemptsByQueue
         * AcdAttemptsByTerminal
