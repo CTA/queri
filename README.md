@@ -102,6 +102,8 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * TrafficAnalysisByPeriodPerHour
       * UnansweredCallWaitTimePerHour
     * CallOutcomes
+      * BillableActivities
+      * CallResultsByOutcomes
       * Outcomes
     * DetailsOfAgentSessionsAndPauses
       * DetailOfAgentSessions
@@ -238,6 +240,7 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
         * TrafficAnalysisByPeriodPerHour
         * UnansweredCallWaitTimePerHour
       * CallOutcomes
+        * BillableActivities
         * CallResultsByOutcomes
       * Distributions
         * AcdAttemptsByQueue
