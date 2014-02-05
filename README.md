@@ -104,6 +104,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
     * CallOutcomes
       * BillableActivities
       * CallResultsByOutcomes
+      * NonbillableActivities
       * Outcomes
     * DetailsOfAgentSessionsAndPauses
       * DetailOfAgentSessions
@@ -242,6 +243,7 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
       * CallOutcomes
         * BillableActivities
         * CallResultsByOutcomes
+        * NonbillableActivities
       * Distributions
         * AcdAttemptsByQueue
         * AcdAttemptsByTerminal
