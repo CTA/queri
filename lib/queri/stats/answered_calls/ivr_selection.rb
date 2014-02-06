@@ -10,7 +10,7 @@ module Queri
           end
 
           def key_translations
-            Hash[
+            ActiveSupport::OrderedHash[
               :ivr_selection, "IVR",
               :number_of_calls, "N. Calls",
               :percentage_of_calls, "&nbsp;",

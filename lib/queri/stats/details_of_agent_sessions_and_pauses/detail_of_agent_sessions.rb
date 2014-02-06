@@ -10,7 +10,7 @@ module Queri
           end
 
           def key_translations
-            Hash[
+            ActiveSupport::OrderedHash[
               :agent, "Agent",
               :clock_in, "Start hour", 
               :clock_out, "End hour", 

@@ -49,6 +49,17 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
   * Stats
     * AgentsAndSessions
       * AgentAvailability
+      * AgentBillableTimeByHour
+      * AgentOccupancyReport
+      * AgentPayableTimeByHour
+      * AgentPerformanceByAcdGroup
+      * AgentSessionDetail
+      * AgentSessionTimeByHour
+      * AnsweredCallsByCustomGroup
+      * AnsweredCallsByLocation
+      * AnsweredCallsByServiceGroup
+      * AnsweredCallsForSelectedQueues
+      * SessionAndPauseDurations
     * AnsweredCalls
       * AgentsOnQueue
       * AllCalls
@@ -65,6 +76,39 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * Transfers
     * AreaCodeAnalysis
       * AreaCodeReport
+    * CallDistributionByDay
+      * AnsweredCallDistributionPerDay
+      * AnsweredCallWaitTimePerDay
+      * InclusiveServiceLevelAgreementPerDay
+      * QueueLengthPerDay
+      * SalesPerDay
+      * ScheduleAdherencePerDay
+      * TrafficAnalysisByPeriodPerDay
+      * UnansweredCallWaitTimePerDay
+    * CallDistributionByDayOfWeek
+      * AnsweredCallDistributionPerDayOfWeek
+      * AnsweredCallWaitTimePerDayOfWeek
+      * InclusiveServiceLevelAgreementPerDayOfWeek
+      * QueueLengthPerDayOfWeek
+      * SalesPerDayOfWeek
+      * ScheduleAdherencePerDayOfWeek
+      * TrafficAnalysisByPeriodPerDayOfWeek
+      * UnansweredCallWaitTimePerDayOfWeek
+    * CallDistributionByHour
+      * AnsweredCallDistributionPerHour
+      * AnsweredCallWaitTimePerHour
+      * InclusiveServiceLevelAgreementPerHour
+      * QueueLengthPerHour
+      * SalesPerHour
+      * ScheduleAdherencePerHour
+      * TrafficAnalysisByPeriodPerHour
+      * UnansweredCallWaitTimePerHour
+    * CallOutcomes
+      * BillableActivities
+      * CallResultsByOutcomes
+      * DetailedAgentReport
+      * NonbillableActivities
+      * Outcomes
     * DetailsOfAgentSessionsAndPauses
       * DetailOfAgentSessions
       * DetailOfAgentPauses
@@ -72,6 +116,10 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * QueueDetails
     * DetailsOfUnansweredCalls
       * DetailOfUnansweredCalls
+    * Distributions
+      * AcdAttemptsByQueue
+      * AcdAttemptsByTerminal
+      * InboundAcdCallAttempts
     * UnansweredCalls
       * AllCalls
       * AllCallsByStints
@@ -93,6 +141,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * UnansweredOutboundCallsByAgent
   * Realtime
     * Agents
+    * Calls
     * Queues
 
 ### Required Arguments
@@ -114,6 +163,16 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
     * Stats
       * AgentsAndSessions
         * AgentAvailability
+        * AgentBillableTimeByHour
+        * AgentOccupancyReport
+        * AgentSessionTimeByHour
+        * AgentPayableTimeByHour
+        * AgentPerformanceByAcdGroup
+        * AnsweredCallsByCustomGroup
+        * AnsweredCallsByLocation
+        * AnsweredCallsByServiceGroup
+        * AnsweredCallsForSelectedQueues
+        * SessionAndPauseDurations
       * AnsweredCalls
         * AgentsOnQueue
         * MusicOnHoldByAgent
@@ -126,6 +185,7 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
         * UnansweredCallsByKeyPress
     * Realtime
       * Agents
+      * Calls
       * Queues
   * Composite agent-level reports
     * Stats
@@ -134,11 +194,17 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
         * DetailOfAgentPauses
   * Aggregate reports
     * Stats
+      * AgentsAndSessions
+        * AgentSessionDetail
       * AnsweredCalls
         * AllCalls
         * CallsFullyWithinTheGivenTimeInterval
       * AreaCodeAnalysis
         * AreaCodeReport
+      * CallOutcomes
+        * Outcomes
+      * Distributions
+        * InboundAcdCallAttempts
       * UnansweredCalls
         * AllCalls
         * CallsFullyWithinTheGivenTimeInterval
@@ -154,6 +220,41 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
         * QueuePosition
         * ServiceLevelAgreement
         * Transfers
+      * CallDistributionByDay
+        * AnsweredCallDistributionPerDay
+        * AnsweredCallWaitTimePerDay
+        * InclusiveServiceLevelAgreementPerDay
+        * QueueLengthPerDay
+        * SalesPerDay
+        * ScheduleAdherencePerDay
+        * TrafficAnalysisByPeriodPerDay
+        * UnansweredCallWaitTimePerDay
+      * CallDistributionByDayOfWeek
+        * AnsweredCallDistributionPerDayOfWeek
+        * AnsweredCallWaitTimePerDayOfWeek
+        * InclusiveServiceLevelAgreementPerDayOfWeek
+        * QueueLengthPerDayOfWeek
+        * SalesPerDayOfWeek
+        * ScheduleAdherencePerDayOfWeek
+        * TrafficAnalysisByPeriodPerDayOfWeek
+        * UnansweredCallWaitTimePerDayOfWeek
+      * CallDistributionByHour
+        * AnsweredCallDistributionPerHour
+        * AnsweredCallWaitTimePerHour
+        * InclusiveServiceLevelAgreementPerHour
+        * QueueLengthPerHour
+        * SalesPerHour
+        * ScheduleAdherencePerHour
+        * TrafficAnalysisByPeriodPerHour
+        * UnansweredCallWaitTimePerHour
+      * CallOutcomes
+        * BillableActivities
+        * CallResultsByOutcomes
+        * DetailedAgentReport
+        * NonbillableActivities
+      * Distributions
+        * AcdAttemptsByQueue
+        * AcdAttemptsByTerminal
       * UnansweredCalls
         * AllCallsByStints
         * CallOverview

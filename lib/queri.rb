@@ -1,8 +1,11 @@
 require "queri/version"
 require "yaml"
 require "xmlrpc/client"
+require 'active_support/ordered_hash'
 
+require File.join( File.dirname(__FILE__), "queri", "realtime_arg_helpers" )
 Dir[ File.join( File.dirname(__FILE__), "**", "*.rb" ) ].each {|f| require f}
+
 
 module Queri
   LOGFILE = ""

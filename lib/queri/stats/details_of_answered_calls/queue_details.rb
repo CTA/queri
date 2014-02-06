@@ -10,7 +10,7 @@ module Queri
           end
 
           def key_translations
-            Hash[
+            ActiveSupport::OrderedHash[
               :date, "Date",
               :caller_id, "Caller",
               :queue, "Queue",

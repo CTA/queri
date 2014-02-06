@@ -10,7 +10,7 @@ module Queri
           end
 
           def key_translations
-            Hash[
+            ActiveSupport::OrderedHash[
               :time_interval, "Answer",
               :calls_taken_in_time_interval, "N. Calls",
               :calls_between_lower_interval, "Delta",

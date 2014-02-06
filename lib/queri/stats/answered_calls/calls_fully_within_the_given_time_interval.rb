@@ -10,8 +10,7 @@ module Queri
           end
 
           def key_translations
-            Hash[
-              :calls_fully_within_the_given_time_interval, "Calls fully within the given time interval:",
+            ActiveSupport::OrderedHash[
               :calls_answered, "N. calls answered by operators:",
               :average_call_length, "Average call length:",
               :minimum_call_length, "Min call length:",

@@ -10,7 +10,7 @@ module Queri
           end
 
           def key_translations
-            Hash[
+            ActiveSupport::OrderedHash[
               :level, "Level",
               :agent, "Agent",
               :time, "Time",
