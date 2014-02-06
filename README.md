@@ -139,6 +139,7 @@ Currently returns analyses from two methods: QM.stats and QM.realtime.
       * UnansweredOutboundCallsByAgent
   * Realtime
     * Agents
+    * Calls
     * Queues
 
 ### Required Arguments
@@ -182,6 +183,7 @@ Composite aggregate reports return an Array of Hashes, each Hash corresponding t
         * UnansweredCallsByKeyPress
     * Realtime
       * Agents
+      * Calls
       * Queues
   * Composite agent-level reports
     * Stats
