@@ -3,9 +3,49 @@ require "yaml"
 require "xmlrpc/client"
 require 'active_support/ordered_hash'
 
-require File.join( File.dirname(__FILE__), "queri", "realtime_arg_helpers" )
-Dir[ File.join( File.dirname(__FILE__), "**", "*.rb" ) ].each {|f| require f}
+# Load helpers
+require "queri/realtime_arg_helpers"
+require "queri/arg_helpers"
+require "queri/aggregate_report_helpers"
+require "queri/composite_agent_level_report_helpers"
+require "queri/composite_by_hour_report_helpers"
+require "queri/composite_report_helpers"
 
+# Load report methods
+require "queri/stats"
+require "queri/realtime"
+
+# Load Stats report classes
+require "queri/stats/agents_and_sessions"
+Dir[ File.join( File.dirname(__FILE__), "queri/stats/agents_and_sessions", "*.rb" ) ].each {|f| require f }
+require "queri/stats/answered_calls"
+Dir[ File.join( File.dirname(__FILE__), "queri/stats/answered_calls", "*.rb" ) ].each {|f| require f }
+require "queri/stats/call_distribution_by_day"
+Dir[ File.join( File.dirname(__FILE__), "queri/stats/call_distribution_by_day", "*.rb" ) ].each {|f| require f }
+require "queri/stats/call_distribution_by_day_of_week"
+Dir[ File.join( File.dirname(__FILE__), "queri/stats/call_distribution_by_day_of_week", "*.rb" ) ].each {|f| require f }
+require "queri/stats/call_distribution_by_hour"
+Dir[ File.join( File.dirname(__FILE__), "queri/stats/call_distribution_by_hour", "*.rb" ) ].each {|f| require f }
+require "queri/stats/call_outcomes"
+Dir[ File.join( File.dirname(__FILE__), "queri/stats/call_outcomes", "*.rb" ) ].each {|f| require f }
+require "queri/stats/details_of_agent_sessions_and_pauses"
+Dir[ File.join( File.dirname(__FILE__), "queri/stats/details_of_agent_sessions_and_pauses", "*.rb" ) ].each {|f| require f }
+require "queri/stats/details_of_answered_calls"
+Dir[ File.join( File.dirname(__FILE__), "queri/stats/details_of_answered_calls", "*.rb" ) ].each {|f| require f }
+require "queri/stats/details_of_unanswered_calls"
+Dir[ File.join( File.dirname(__FILE__), "queri/stats/details_of_unanswered_calls", "*.rb" ) ].each {|f| require f }
+require "queri/stats/distributions"
+Dir[ File.join( File.dirname(__FILE__), "queri/stats/distributions", "*.rb" ) ].each {|f| require f }
+require "queri/stats/unanswered_calls"
+Dir[ File.join( File.dirname(__FILE__), "queri/stats/unanswered_calls", "*.rb" ) ].each {|f| require f }
+
+# Load Realtime report classes
+require "queri/realtime/agents"
+Dir[ File.join( File.dirname(__FILE__), "queri/realtime/agents", "*.rb" ) ].each {|f| require f }
+require "queri/realtime/calls"
+Dir[ File.join( File.dirname(__FILE__), "queri/realtime/calls", "*.rb" ) ].each {|f| require f }
+require "queri/realtime/queues"
+Dir[ File.join( File.dirname(__FILE__), "queri/realtime/queues", "*.rb" ) ].each {|f| require f }
 
 module Queri
   LOGFILE = ""
