@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Queri::Stats::UnansweredCalls::UnansweredOutboundCallsByAgent do
+describe Queri::Stats::UnansweredCalls::UnansweredOutboundCallsByAgent, :focus do
   let(:report_class) { Queri::Stats::UnansweredCalls::UnansweredOutboundCallsByAgent }
   let(:xml_code) { report_class.xml_code }
 

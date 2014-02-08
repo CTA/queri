@@ -2,7 +2,7 @@ module CompositeAgentLevelReportHelpers
   private
 
     def parse_response
-      r = Queri.send_request(@queues, self, @period_start, @period_end)
+      r = Queri::XmlClient.send_request(@queues, self, @period_start, @period_end)
       new_keys = self.class.keys
       r.shift
       new_metrics = Hash.new {|h,k| h[k] = []}

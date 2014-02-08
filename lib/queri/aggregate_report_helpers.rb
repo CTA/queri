@@ -2,7 +2,7 @@ module AggregateReportHelpers
   private
 
     def parse_response
-      r = Queri.send_request(@queues, self, @period_start, @period_end)
+      r = Queri::XmlClient.send_request(@queues, self, @period_start, @period_end)
       pairs = self.class.key_translations.each_pair
       r.shift
       new_metrics = r.map do |metric|

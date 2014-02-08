@@ -6,7 +6,7 @@ describe Queri::Stats::AnsweredCalls::Transfers do
 
   before do
     Queri.configure_with(File.join(File.dirname(__FILE__), '..', '..', 'config.yml'))
-    Queri.stub(:send_request).and_return(
+    Queri::XmlClient.stub(:send_request).and_return(
       [["Transfer to", "N. Calls", "&nbsp;", "..."],
         ["211", "121", "10.0%", ""],
         ["311", "122", "10.0%", ""]]
