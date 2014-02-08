@@ -61,10 +61,5 @@ module Queri
     def configure_with path_to_yaml_file
       Queri::XmlClient.configure_with path_to_yaml_file
     end
-
-#    def send_request *args
-#      Queri::XmlClient.send_request args
-#    end
-
   end
 end
