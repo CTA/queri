@@ -7,6 +7,7 @@ lib = File.expand_path(File.dirname(__FILE__))
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 # Load helpers
+require "queri/helpers/time_helpers"
 require "queri/realtime_arg_helpers"
 require "queri/arg_helpers"
 require "queri/aggregate_report_helpers"
