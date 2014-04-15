@@ -11,7 +11,6 @@ module Queri
 
           def key_translations
             ActiveSupport::OrderedHash[
-              :calls_fully_within_the_given_time_interval, "Calls fully within the given time interval:",
               :calls_unanswered, "N.of unanswered calls:",
               :average_call_waiting_time, "Average wait time before disconnection:",
               :minimum_call_waiting_time, "Min wait time before disconnection:",
